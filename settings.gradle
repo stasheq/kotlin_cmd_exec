@@ -1,0 +1,3 @@
+include ':kotlinExecLib'
+include ':example'
+rootProject.name = "Kotlin cmd exec"
