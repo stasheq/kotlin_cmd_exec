@@ -8,5 +8,5 @@ application {
 }
 
 dependencies {
-    implementation(project(":kotlinExecLib"))
+    implementation("me.szymanski.kotlinexec:kotlin-exec-lib:1.0")
 }
