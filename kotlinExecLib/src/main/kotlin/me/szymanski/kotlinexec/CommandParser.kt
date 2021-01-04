@@ -32,6 +32,7 @@ internal object CommandParser {
             whiteSpaceBefore = c.isWhitespace()
         }
         if (inQuote || continuingWithQuotes) throw IllegalArgumentException("Wrong command: $this")
+        parts.addNonEmpty(currentPart.toString())
         return parts
     }
 

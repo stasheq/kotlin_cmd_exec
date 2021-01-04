@@ -14,7 +14,7 @@ publishing {
         create<MavenPublication>("default") {
             groupId = "me.szymanski.kotlinexec"
             artifactId = "kotlin-exec-lib"
-            version = "1.0"
+            version = "1.01"
 
             from(components["java"])
 
@@ -48,7 +48,12 @@ publishing {
     }
 }
 
+tasks.withType<Test> {
+    useJUnitPlatform()
+}
+
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.10")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.21")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
+    testImplementation("io.kotest:kotest-runner-junit5:4.3.2")
 }

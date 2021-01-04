@@ -9,7 +9,7 @@ dependencies {
 ```
 import me.szymanski.kotlinexec.exec
 
-"echo Hello World".exec()
+"echo \"Hello World\"".exec()
 "mkdir newDir".exec()
 "git status".exec()
 ...

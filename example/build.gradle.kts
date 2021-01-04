@@ -4,9 +4,10 @@ plugins {
 }
 
 application {
-    mainClassName = "me.szymanski.kotlinexec.example.Main"
+    mainClass.set("me.szymanski.kotlinexec.example.Main")
 }
 
 dependencies {
-    implementation("me.szymanski.kotlinexec:kotlin-exec-lib:1.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.21")
+    implementation("me.szymanski.kotlinexec:kotlin-exec-lib:1.01")
 }
