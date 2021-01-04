@@ -2,7 +2,7 @@
 Code to run command line system commands from Kotlin.  
 ```
 dependencies {
-    implementation("me.szymanski.kotlinexec:kotlin-exec-lib:1.0")
+    implementation("me.szymanski.kotlinexec:kotlin-exec-lib:1.01")
 }
 ```
 
